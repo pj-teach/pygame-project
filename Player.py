@@ -59,7 +59,7 @@ class Player:
 class Obstacle:
     x: int
     y: int
-    img:any
+    img:any # type: ignore
     #to be checked how to create static variable with dataclass
     def draw(self, screen):
         screen.blit(self.img,(self.x, self.y))
